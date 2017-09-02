@@ -1,0 +1,55 @@
+blah
+bhal
+blha
+blah
+wow
+wowo
+wow
+mwo
+wmow
+mow
+mow
+Done function
+Lines Containing duplicate : 2  wow
+Lines Containing duplicate : 2  mow
+blah
+bhal
+blha
+blah
+wow
+wowo
+wow
+mwo
+wmow
+mow
+mow
+Done function
+Lines Containing duplicate : 2  wow
+Lines Containing duplicate : 2  mow
+blah
+bhal
+blha
+blah
+wow
+wowo
+wow
+mwo
+wmow
+mow
+mow
+Done function
+Lines Containing duplicate : 2  wow
+Lines Containing duplicate : 2  mowblah
+bhal
+blha
+blah
+wow
+wowo
+wow
+mwo
+wmow
+mow
+mow
+Done function
+Lines Containing duplicate : 2  wow
+Lines Containing duplicate : 2  mow

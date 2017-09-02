@@ -1,0 +1,16 @@
+total 15489
+drwxrwxrwx   1 user     group           0 Aug  5 15:36 bin
+-rw-rw-rw-   1 user     group          85 Sep  1 19:03 MyFirstTest.go
+-rw-rw-rw-   1 user     group          74 Sep  2 10:43 hello.go
+-rwxrwxrwx   1 user     group     1625088 Sep  2 10:48 echo.exe
+-rw-rw-rw-   1 user     group         244 Sep  2 11:04 echo.go
+-rwxrwxrwx   1 user     group     1846272 Sep  2 11:50 dedup.exe
+-rw-rw-rw-   1 user     group         447 Sep  2 12:40 dedup.go
+-rw-rw-rw-   1 user     group         598 Sep  2 12:42 deduptext.txt
+-rwxrwxrwx   1 user     group     1878528 Sep  2 12:43 dedupfromfile.exe
+-rw-rw-rw-   1 user     group        1011 Sep  2 12:50 dedupfromfile.go
+-rw-rw-rw-   1 user     group         483 Sep  2 14:46 fetchwebpage.go
+-rwxrwxrwx   1 user     group     5250048 Sep  2 14:46 fetchwebpage.exe
+-rwxrwxrwx   1 user     group     5252096 Sep  2 15:33 concurrentwebfetch.exe
+-rw-rw-rw-   1 user     group         680 Sep  2 15:38 concurrentwebfetch.go
+-rw-rw-rw-   1 user     group           0 Sep  2 16:14 files.txt
