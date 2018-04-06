@@ -1,0 +1,6 @@
+total 0
+drwxr-xr-x   5 srnarayanan  108493823  160  6 Apr 22:22 .
+drwxr-xr-x   3 srnarayanan  108493823   96  5 Apr 22:06 ..
+drwxr-xr-x  12 srnarayanan  108493823  384  6 Apr 22:20 .git
+drwxr-xr-x   3 srnarayanan  108493823   96  5 Apr 22:06 Go
+-rw-r--r--   1 srnarayanan  108493823    0  6 Apr 22:22 newfiles.txt
