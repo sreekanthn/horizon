@@ -3,16 +3,15 @@ package main
 import "fmt"
 import "os"
 
-func main(){
+func main() {
 
-    s:=""
-    sep:=""
-    for i, arg := range os.Args[1:] {
-      fmt.Println(i)
-      s += sep + arg
-      sep=" "
-    }
-    fmt.Println(os.Args[0])
-    fmt.Println(s)
+	var s, separator string
+
+	for i := 1; i < len(os.Args); i++ {
+		s += separator + os.Args[i]
+		separator = " "
+	}
+	fmt.Println(os.Args[0])
+	fmt.Println(s)
 
 }

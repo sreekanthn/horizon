@@ -1,25 +1,29 @@
 package main
 
 import (
-    "fmt"
-    "io"
-    "net/http"
-    "os"
+	"fmt"
+	"io/ioutil"
+	"net/http"
+	"os"
+	"strings"
 )
 
-func main(){
-  for _, url := range os.Args[1:]{
-    resp, err := http.Get(url)
-    if err!=nil{
-      fmt.Println("Error Occured !! %v", err)
-      os.Exit(1)
-    }
-    respbody, err := io.Copy(os.Stdout, resp.Body)
-    resp.Body.Close()
-    if err!=nil{
-      fmt.Println("Error Occured while reading url %s !! %v\n", url, err)
-      os.Exit(1)
-    }
-    fmt.Printf("%s", respbody)
-  }
+func main() {
+	for _, url := range os.Args[1:] {
+		// check if the url has an http:// prefix
+		if !strings.HasPrefix(url, "http://") {
+			url = "http://" + url
+		}
+		fetchText, err := http.Get(url)
+		if err != nil {
+			fmt.Printf("Unable to fetch the URL : %v", err)
+			os.Exit(1)
+		}
+		body, err := ioutil.ReadAll(fetchText.Body)
+		if err != nil {
+			fmt.Printf("Error reading the body : %v", err)
+			os.Exit(1)
+		}
+		fmt.Printf("%s", body)
+	}
 }
