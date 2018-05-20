@@ -1,27 +1,48 @@
 package main
 
 import "fmt"
+import "math"
 
 type Point struct {
-    X, Y int
+	X, Y float64
 }
 
 type Circle struct {
-    Center Point
-    Radius int
+	Center Point
+	Radius int
 }
 
 type Wheel struct {
-    Circle Circle
-    Spokes int
+	Circle Circle
+	Spokes int
 }
 
-func main()  {
+func Distance(p, q Point) float64 {
+	return math.Hypot(p.X-q.X, p.Y-q.Y)
+}
 
-  var w Wheel
-  w.Circle.Center.X = 10
-  w.Circle.Center.Y = 20
+func (p Point) Distance(q Point) float64 {
+	return math.Hypot(p.X-q.X, p.Y-q.Y)
+}
 
-  fmt.Printf("Centre is at %d\t%d" , w.Circle.Center.X, w.Circle.Center.Y)
+func (p *Point) Scaleby(factor float64) {
+	p.X *= factor
+	p.Y *= factor
+}
 
+func main() {
+	p := Point{10, 25}
+	q := Point{5, 22}
+	var r *Point
+	dist := Distance
+
+	fmt.Println(p.Distance(q))
+	fmt.Println(Distance(p, q))
+	fmt.Println(dist(p, q))
+	r = &p
+	r.Scaleby(5)
+
+	scale := (*Point).Scaleby
+	scale(&q, 4)
+	fmt.Println(p.Distance(q))
 }
